@@ -1,7 +1,7 @@
 #include <breakout/mov.h>
 #include <breakout/rect.h>
 
-inline void mov_rect(RECT *rect, const VEL *vel)
+void mov_rect(RECT *rect, const VEL *vel)
 {
     rect_mov_y(rect, vel->y);
     rect_mov_x(rect, vel->x);

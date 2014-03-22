@@ -20,55 +20,55 @@ static inline void rect_calc_right(RECT *rect)
     rect->right = (rect->left + rect->width) - 1;
 }
 
-inline void rect_set_top(RECT *rect, int top)
+void rect_set_top(RECT *rect, int top)
 {
     rect->top = top;
     rect_calc_height(rect);
 }
 
-inline void rect_set_left(RECT *rect, int left)
+void rect_set_left(RECT *rect, int left)
 {
     rect->left = left;
     rect_calc_width(rect);
 }
 
-inline void rect_set_bottom(RECT *rect, int bottom)
+void rect_set_bottom(RECT *rect, int bottom)
 {
     rect->bottom = bottom;
     rect_calc_height(rect);
 }
 
-inline void rect_set_right(RECT *rect, int right)
+void rect_set_right(RECT *rect, int right)
 {
     rect->right = right;
     rect_calc_width(rect);
 }
 
-inline void rect_set_height(RECT *rect, int height)
+void rect_set_height(RECT *rect, int height)
 {
     rect->height = height;
     rect_calc_bottom(rect);
 }
 
-inline void rect_set_width(RECT *rect, int width)
+void rect_set_width(RECT *rect, int width)
 {
     rect->width = width;
     rect_calc_right(rect);
 }
 
-inline void rect_mov_y(RECT *rect, int y)
+void rect_mov_y(RECT *rect, int y)
 {
     rect->top += y;
     rect->bottom += y;
 }
 
-inline void rect_mov_x(RECT *rect, int x)
+void rect_mov_x(RECT *rect, int x)
 {
     rect->left += x;
     rect->right += x;
 }
 
-inline void rect_init(RECT *rect, int top, int left, int height, int width)
+void rect_init(RECT *rect, int top, int left, int height, int width)
 {
     rect->top = top;
     rect->left = left;

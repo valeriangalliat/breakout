@@ -9,7 +9,7 @@ typedef struct
     int x;
 } VEL;
 
-inline void mov_rect(RECT *rect, const VEL *vel);
+void mov_rect(RECT *rect, const VEL *vel);
 void mov_next(const RECT *in, const VEL *vel, RECT *out);
 
 #endif
