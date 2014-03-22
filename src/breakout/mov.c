@@ -1,4 +1,5 @@
 #include <breakout/mov.h>
+#include <breakout/rect.h>
 
 inline void mov_rect(RECT *rect, const VEL *vel)
 {
