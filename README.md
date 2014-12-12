@@ -1,12 +1,12 @@
 Breakout
 ========
 
-Breakout game in C with ncurses.
+> Breakout game in C with ncurses.
 
 Dependencies
 ------------
 
-- `ncurses`
+- ncurses
 
 Controls
 --------
